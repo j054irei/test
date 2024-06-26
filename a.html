@@ -5,7 +5,8 @@
 <script type="text/javascript">
 function sum()
 {
-    form.c.value = form.a.value + form.b.value;
+    //入力された値が文字列としてではなく、数値として扱われるようにするため
+    form.c.value = parseFloat(form.a.value) + parseFloat(form.b.value);
 }
 </script>
 </head>
